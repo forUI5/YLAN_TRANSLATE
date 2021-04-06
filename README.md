@@ -1,33 +1,7 @@
-工具用途
-ABAP程序批量自动翻译
+ABAP程序批量自动翻译，根据程序名检索代码中的中文，自动更新代码为可翻译文本，批量下载上传翻译文本并写入传输请求。
+详细介绍
+https://blog.csdn.net/cylcylcylcylwo/article/details/115457156
 
-备注
-目前只做了可执行程序和INCLUDE程序，只做了中文翻英文。
-基于此版本修改，翻译其他类型程序也很简单，如WDA，只要从表WDY_VIEW 找到CLASS，然后CLASS找到程序名即可。同样翻译其他语言改动也不大。
-有兴趣和精力一起完善代码的朋友联系15104912340@qq.com
-
-操作步骤
-1.查询
-2.生成翻译文本
-3.下载文本
-4.上传文本
-
-操作解释
-查询
-输入包或者请求，或者用户名，查询出所有的可执行程序和INCLUDE，也可以单独指定程序名
- 
-
- 
-展示转换代码
-程序在替换代码前已经做了语法检查，如果不愿意由程序更新代码，可以查看转换后的代码
- 
-生成翻译文本
-自动查找代码中的中文，添加文本符号(001)，更新代码，创建文本ID，写入传输请求
- 
-下载文本
-下载中文到EXCEL
-上传文本
-上传翻译后的EXCEL，自动更新翻译文本
-写入请求
-生成翻译文本时会自动包请求，此按钮可以单独再包一次请求
-
+ABAP program automatically translates in batches, searches the Chinese in the code according to the program name, automatically updates the code to translatable text, downloads and uploads the translated text in batches, and writes the transmission request.
+Detailed introduction
+https://blog.csdn.net/cylcylcylcylwo/article/details/115457156
